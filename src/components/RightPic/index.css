@@ -1,0 +1,5 @@
+.side__pic {	
+	grid-area: sd;	
+	background-color: pink;	
+	width: 500px;		
+}

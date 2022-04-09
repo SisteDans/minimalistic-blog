@@ -1,0 +1,35 @@
+header {
+	grid-area: hd;
+	background-color: pink;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+	align-items: center;	
+	padding: 0 30px;
+}
+
+nav {	
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-start;
+	gap: 88px;
+	align-items: flex-start;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: 600;	
+	font-size: 18px;
+ } 
+
+ .logo {
+	font-family: 'Amatic SC', cursive;
+	font-size: 22px;	
+	padding-bottom: 60px;	
+ }
+
+ .logo h1 {
+	 margin: auto;
+ }
