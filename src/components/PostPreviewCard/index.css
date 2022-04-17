@@ -1,7 +1,6 @@
 .preview__card {	
 	display: grid;
-	gap: 8px;	
-	height: 120px;
+	gap: 10px;	
 	font-size: 16px;
 }
 

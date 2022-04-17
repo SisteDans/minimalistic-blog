@@ -1,7 +1,6 @@
-main {	
-	grid-area: main;
-	background-color: pink;		
-	padding: 0 30px;
+main {		
+	background-color: transparent;		
+	padding: 0 30px;	
 }
 
 .container {

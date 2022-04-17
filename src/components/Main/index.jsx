@@ -1,14 +1,21 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./index.css";
 import PostPreviewCard from "../PostPreviewCard";
 import data from "../../data.json";
 
-const Main = () => {
-	let dataFirstThree = data.slice(-3).reverse();
+const Main = () => {	
+
+	let FromTheEnd = data.reverse();
+
 	return (
 		<main>
 			<div className="container">
-			{dataFirstThree.map(el => <PostPreviewCard title={el.title} key={el.id} text={el.text} date={el.date} />)}				
+			{FromTheEnd.map(el => (
+				<Link to={"/post/" + el.id} key={el.id}>
+					<PostPreviewCard title={el.title} key={el.id} text={el.text} date={el.date} />				
+				</Link>
+			))}
 			</div>
 		</main>
 	)

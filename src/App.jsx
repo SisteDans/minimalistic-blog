@@ -1,16 +1,18 @@
 import React from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import RightPic from './components/RightPic';
+import {Routes, Route} from 'react-router-dom';
+
+import Home from './pages/Home';
+import NewPost from './pages/NewPost';
+import Profile from './pages/Profile';
 
 const App = () => {
 	return (
-		<div className="all_container">
-			<Header />
-			<Main />
-			<Footer />
-			<RightPic />
+		<div className="all_container">			
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/newpost' element={<NewPost />} />
+				<Route path='/profile' element={<Profile />} />				
+			</Routes>						
 		</div>
 		
 	)

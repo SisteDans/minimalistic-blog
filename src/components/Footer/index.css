@@ -1,6 +1,5 @@
-footer {	
-	grid-area: ft;
-	background-color: pink;		
+footer {		
+	background-color: transparent;		
 	padding: 0 30px;	
 	display: flex;
 	justify-content: center;	
