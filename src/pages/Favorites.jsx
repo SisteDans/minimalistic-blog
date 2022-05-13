@@ -18,7 +18,7 @@ const Favorites = () => {
 	return (		
 		<>	
 			<Header />		
-			<p style={{fontSize:25, fontWeight:600, marginTop:0}}>Избранные посты</p>
+			<h2>Избранные посты</h2>
 			<div className="posts-container">						
 			{posts.reverse().map(el => (					
 						<>

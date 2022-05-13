@@ -108,7 +108,7 @@ redactProfileAvatar(body) {
 
 const config = {
 	path: "https://api.react-learning.ru",	
-	token: localStorage.getItem("token")
+	token: localStorage.getItem("token")	
 }
 
 const api = new Api(config);

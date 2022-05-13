@@ -18,7 +18,7 @@ const MyPosts = () => {
 	return (		
 		<>	
 			<Header />		
-			<p style={{fontSize:25, fontWeight:600, marginTop:0}}>Мои посты</p>
+			<h2>Мои посты</h2>
 			<div className="posts-container">						
 			{posts.reverse().map(el => (					
 						<>

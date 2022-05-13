@@ -24,7 +24,7 @@ const NewPost = () => {
 	return (		
 		<>
 			<Header />			
-			<h2>Пост</h2>
+			<h2>Создать новый пост</h2>
 			<form className="new-post" onSubmit={handler}>							
 				<input type="text" placeholder='Введите заголовок' name="title" value={title} onInput={e => changeTitle(e.target.value)} required />
 				<textarea type="text" placeholder='Напишите пост' name="text" value={text} onInput={e => changeText(e.target.value)} required />

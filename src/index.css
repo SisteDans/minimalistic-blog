@@ -38,21 +38,6 @@ button {
 	border-radius: 25px;
 }
 
-.post {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	align-items: center;
-	justify-content: center;		
-	padding: 10px calc(50% - 380px);
-}
-
-.post__pic {
-	max-width: 700px;
-	max-height: 500px;
-	object-fit: contain;
-}
-
 h2 {
 	margin: 0;
 	text-align: center;

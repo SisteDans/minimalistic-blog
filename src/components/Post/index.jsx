@@ -13,7 +13,7 @@ const Post = ({post, author, startEditCallback}) => {
 		postTags.push(<div className="oneTag">{post.tags[i]}</div>);		
 		}
 	}	
-
+	
 	const handler = (e) => {
 		e.preventDefault();
 		api.deletePost(e);	
@@ -25,12 +25,14 @@ const Post = ({post, author, startEditCallback}) => {
 					<h2>{post.title}</h2>													
 					<p>{post.text}</p>			
 					<img className='post__pic' src={post.image ? post.image : holder} />
-					<div className='tags'>{postTags}</div>				
-					<div>{post.created_at}</div>	
+					<div className="post-details">					
+						<p>Опубликовано: {post.created_at ? post.created_at.substring(0, 10) : ""}</p>	
+						<p>Автор: {author.name}</p>
+					</div>
 					{
-						author._id === user && <div>
-															<button className="default__bttn" onClick={handler} id={post._id}>Удалить пост</button>
+						author._id === user && <div className="post-bttns">															
 															<button className="default__bttn" onClick={startEditCallback}>Редактировать пост</button>
+															<button className="default__bttn" onClick={handler} id={post._id}>Удалить пост</button>
 														</div>
 					}								
 					
