@@ -1,9 +1,43 @@
-.preview__card {	
+.post-preview {	
 	display: grid;
-	gap: 10px;	
+	grid-template-areas:
+  'pic title title'
+  'pic text text'
+  'pic date tags';
+   grid-template-columns: 200px 1fr 1fr;
+	grid-template-rows: 35px 95px 30px;
+	grid-gap: 20px;	
 	font-size: 16px;
+	position: relative;	
+	cursor: pointer;
 }
 
-.preview__card h3 {
+.post-preview h3 {
 	margin: auto;
+	font-size: 22px;
+}
+
+.post-preview__pic {
+	grid-area: pic;	
+}
+
+.post-preview__title {
+	grid-area: title;	
+	padding: 5px 0 5 0;	
+}
+
+.post-preview__text {
+	grid-area: text;
+}
+
+.post-preview__date {
+	grid-area: date;
+	padding: 0 0 5px 0;
+}
+
+.likes {	
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	z-index: 1;	
 }

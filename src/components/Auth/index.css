@@ -1,0 +1,46 @@
+form.auth {	
+	padding: 30px calc(50% - 195px);
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	align-items: center;
+	justify-content: center;	
+}
+
+.auth h2 {
+	margin: 10px 0;
+}
+
+.auth input {
+	background-color: white;
+	border: none;
+	outline: none;
+	padding: 12px 14px;
+	border-radius: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+	border: none;
+	-webkit-text-fill-color: black;
+	-webkit-box-shadow: 0 0 0px 1000px white inset;	
+}
+
+.auth button {
+	background-color: darkslategrey;
+	color: whitesmoke;
+	border: none;
+	outline: none;
+	padding: 10px 12px;
+	border-radius: 20px;
+	width: 190px;	
+}
+
+.sign__bttns {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}

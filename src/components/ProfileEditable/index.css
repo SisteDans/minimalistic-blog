@@ -1,0 +1,22 @@
+.set-profile {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;	
+	padding: 10px calc(50% - 390px);
+	align-items: center;
+	width: 100%;
+}
+
+.set-profile input, textarea {
+	background-color: white;
+	border: none;
+	outline: none;
+	padding: 12px 14px;
+	border-radius: 20px;	
+	width: 400px;	
+}
+
+.set-profile textarea {
+	resize: none;
+	height: 150px;
+}

@@ -3,8 +3,48 @@ main {
 	padding: 0 30px;	
 }
 
-.container {
+.posts-container {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	gap: 40px;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+hr {
+	border: 0;
+   height: 1px;
+   background: #333;
+   background-image: linear-gradient(to right, #ccc, #888, #ccc);
+	width: 900px;
+}
+
+.search__info {
+	padding: 0 30px 50px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.page-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	padding: 20px 100px;
+}
+
+.page-container div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	border: 1px solid;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.page-container .active {
+	color: white;
+	background-color: darkslategrey;
+	font-weight: 600;
 }

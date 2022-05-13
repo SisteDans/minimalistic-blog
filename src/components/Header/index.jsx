@@ -1,16 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './index.css';
+import Search from "../Search";
 
-const Header = () => {
+const Header = ({searchText, changeText}) => {	
 	return (
 		<header>			
-			<nav>
-				<Link to="/">Главная</Link>
-				<Link to="/newpost">Создать пост</Link>
-				<Link to="/profile">Профиль</Link>
-			</nav>
-			<div className="logo"><h1>Полёт мыслей в стратостферу</h1></div>
+			
+		{ localStorage.getItem("token") ? <nav>				
+				<NavLink exact activeClassName="activeNavItem" to="/newpost">Создать пост</NavLink>
+				<NavLink exact activeClassName="activeNavItem" to="/profile">Профиль</NavLink>
+				<NavLink exact activeClassName="activeNavItem" to="/favorites">Избранное</NavLink>
+				<NavLink exact activeClassName="activeNavItem" to="/my_posts">Мои посты</NavLink>
+				<Search searchText={searchText} changeText={changeText} />
+			</nav>				
+		:	<nav>								
+				<Link to="/signin">Авторизация</Link>				
+				<Search searchText={searchText} changeText={changeText} />
+			</nav>}			
+			<Link to="/"><div className="logo"><h1>Life Among Almond Blossoms</h1></div></Link>
 		</header>
 	)
 }
